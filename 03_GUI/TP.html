@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Praktikan</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            width: 400px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #000000;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+        #output {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Masukkan Nama Praktikan</h2>
+        <input type="text" id="nameInput" placeholder="Masukkan nama terlebih dahulu.">
+        <button onclick="showName()">Submit</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function showName() {
+            var name = document.getElementById("nameInput").value;
+            if (name.trim() !== "") {
+                document.getElementById("output").textContent = "Halo " + name;
+            } else {
+                document.getElementById("output").textContent = "Masukkan nama terlebih dahulu.";
+            }
+        }
+    </script>
+</body>
+</html>
