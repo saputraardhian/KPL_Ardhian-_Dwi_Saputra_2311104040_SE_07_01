@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Praktikan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .calculator {
+            display: inline-block;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        .output {
+            width: 100%;
+            height: 40px;
+            text-align: right;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .grid button, .ops button {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+        }
+        .ops {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kalkulator Praktikan</h2>
+    <div class="calculator">
+        <input type="text" id="output" class="output" disabled>
+        <div style="display: flex;">
+            <div class="grid">
+                <button onclick="inputNumber(1)">1</button>
+                <button onclick="inputNumber(2)">2</button>
+                <button onclick="inputNumber(3)">3</button>
+                <button onclick="inputNumber(4)">4</button>
+                <button onclick="inputNumber(5)">5</button>
+                <button onclick="inputNumber(6)">6</button>
+                <button onclick="inputNumber(7)">7</button>
+                <button onclick="inputNumber(8)">8</button>
+                <button onclick="inputNumber(9)">9</button>
+                <button onclick="inputNumber(0)">0</button>
+            </div>
+            <div class="ops">
+                <button onclick="setOperator('+')">+</button>
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentInput = "";
+        let operator = "";
+        let firstNumber = "";
+
+        function inputNumber(num) {
+            currentInput += num;
+            document.getElementById("output").value = currentInput;
+        }
+
+        function setOperator(op) {
+            if (currentInput !== "") {
+                firstNumber = currentInput;
+                operator = op;
+                currentInput = "";
+            }
+        }
+
+        function calculate() {
+            if (firstNumber !== "" && currentInput !== "") {
+                let result = eval(firstNumber + operator + currentInput);
+                document.getElementById("output").value = result;
+                currentInput = "";
+                firstNumber = "";
+                operator = "";
+            }
+        }
+    </script>
+</body>
+</html>
