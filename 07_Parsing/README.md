@@ -6,7 +6,7 @@ Fitur:
 
 •	Parsing komponen URL (hostname, query parameters)
 
-•	Konversi string JSON {"name":"Ardhian","age":20} menjadi objek JavaScript menggunakan JSON.parse
+•	Konversi string JSON {"name":"Revan","age":21} menjadi objek JavaScript menggunakan JSON.parse
 
 •	Parsing query string name=Revan&age=21 menjadi objek key-value
 
