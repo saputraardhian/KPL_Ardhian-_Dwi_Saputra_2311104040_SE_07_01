@@ -4,5 +4,8 @@ File index.js menginisialisasi i18next, sebuah pustaka untuk manajemen internasi
 
 File .env menyimpan variabel lingkungan yang digunakan dalam aplikasi, sementara package.json mengelola metadata proyek dan dependensi yang diperlukan, termasuk pustaka untuk i18n. Terakhir, package-lock.json menyimpan informasi tentang versi spesifik dari dependensi yang diinstal. Secara keseluruhan, kode ini memungkinkan aplikasi untuk menampilkan teks dalam berbagai bahasa sesuai dengan konfigurasi yang ditentukan.Environment: development
 
-dibawah hasil output codenya
+dibawah hasil output codenya:
+
+![image](https://github.com/user-attachments/assets/15c82f70-58c7-4322-b9e6-17c14226671a)
+
 
