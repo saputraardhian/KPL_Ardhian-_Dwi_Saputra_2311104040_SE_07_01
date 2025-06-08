@@ -6,6 +6,3 @@ File .env menyimpan variabel lingkungan yang digunakan dalam aplikasi, sementara
 
 dibawah hasil output codenya
 
-Port: 3000
-Translation (intro): Welcome to our application.
-Translation (greeting): Hello Ardhian!
