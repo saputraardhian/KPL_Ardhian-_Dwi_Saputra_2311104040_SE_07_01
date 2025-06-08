@@ -29,4 +29,5 @@ Terakhir, bagian switch digunakan untuk menentukan tindakan berdasarkan nilai va
 Jika pilihan bernilai 2, maka akan mencetak "ini pilihan 2". Jika nilainya tidak cocok dengan case yang ada, maka bagian default akan dijalankan.
 
 
+Untuk hasil output semua file :
 ![image](https://github.com/user-attachments/assets/ba7ff3c6-ae7f-45b6-a80b-d2d8c2c5da2d)
