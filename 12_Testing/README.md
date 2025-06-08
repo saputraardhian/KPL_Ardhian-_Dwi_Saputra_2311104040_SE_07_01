@@ -28,3 +28,7 @@ Pengamatan performa saat idle menunjukkan konsumsi CPU dan GPU di angka 0.0%. Sa
 
 Pengujian logika dilakukan menggunakan perintah console.assert() yang ditulis dalam fungsi testCariNilaiPangkat(), mencakup semua kondisi logika penting. Seluruh test berhasil dijalankan dengan benar, menunjukkan bahwa fungsi hitungPangkat() telah bekerja optimal dan mencakup semua kemungkinan skenario input.
 
+![image](https://github.com/user-attachments/assets/3276e0d3-5323-4021-b4c5-5ea0c75ca23d)
+
+![image](https://github.com/user-attachments/assets/1417580f-40f3-4920-b294-00b75fd2986c)
+
